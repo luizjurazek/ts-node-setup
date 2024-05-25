@@ -9,9 +9,9 @@
     "husky:prepare": "husky init",
     "prepare": "husky",
     "lint-staged": "lint-staged",
-    "test": "jest --coverage --passWithNoTests",
+    "test": "jest --passWithNoTests",
     "test:watch": "npm test --watch",
-    "test:staged": "npm test --findRelatedTests",
+    "test:staged": "jest --coverage --passWithNoTests --findRelatedTests",
     "test:push": "npm test"
   },
   "keywords": [],
