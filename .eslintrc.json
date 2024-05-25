@@ -1,6 +1,5 @@
 {
 	"env": {
-		"ES2021": true,
 		"node": true,
 		"jest": true
 	},
