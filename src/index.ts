@@ -1,3 +1,7 @@
-const message = "hello world";
-console.log(message);
-console.log("aaa");
+class Person {
+  sayMyName() {
+    return "Luiz";
+  }
+}
+
+export default Person;
