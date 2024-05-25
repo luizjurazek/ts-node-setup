@@ -1,6 +1,7 @@
 module.export = {
   roots: ["<rootDir>/src"],
-  collectCoverageFrom: ["<rootDir>/src/**/*.ts"],
+  collectCoverage: true,
+  // collectCoverageFrom: ["<rootDir>/src/**/*.ts"],
   coverageDirectory: "coverage",
   testEnvironment: "node",
   transform: {
@@ -10,4 +11,6 @@ module.export = {
   moduleNameMapper: {
     "@/(.*)": "<rootDir>/Src/$1",
   },
+  coverageReporters: ["cobertura", "lcov", "text"],
+  collectCoverageFrom: ["src/**/*.{ts,tsx,js,jsx}", "!src/**/*.d.ts"],
 };
