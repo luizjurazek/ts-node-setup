@@ -7,10 +7,10 @@
     "husky:prepare": "husky init",
     "prepare": "husky",
     "lint-staged": "lint-staged",
-    "test": "jest --passWithNoTests",
+    "test": "jest --coverage --passWithNoTests",
     "test:watch": "npm test --watch",
     "test:staged": "npm test --findRelatedTests",
-    "test:push": "npm test --watch --coverage=false"
+    "test:push": "npm test"
   },
   "keywords": [],
   "author": "",
