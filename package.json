@@ -5,7 +5,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "start:dev": "nodemon --watch \"src\" --exec \"ts-node src/server.ts\" -e ts",
+    "start:dev": "nodemon --watch \"src\" --exec \"ts-node src/app.ts\" -e ts",
     "husky:prepare": "husky init",
     "prepare": "husky",
     "lint-staged": "lint-staged",
@@ -39,6 +39,7 @@
   "dependencies": {
     "@babel/preset-env": "^7.24.6",
     "babel-jest": "^29.7.0",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2"
   }
 }
