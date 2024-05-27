@@ -1,12 +1,9 @@
 import Router from "express";
 import { Request, Response, NextFunction } from "express";
 import errorHandle from "../middleware/errorHandle";
+import { CustomError } from "../types/errorTypes";
 
 const router = Router();
-
-interface CustomError extends Error {
-  statusCode?: number;
-}
 
 router.get("/errorhandle", (req: Request, res: Response, next: NextFunction) => {
   try {

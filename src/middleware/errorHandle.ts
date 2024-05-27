@@ -1,17 +1,7 @@
 import { Request, Response, NextFunction } from "express";
-
-interface CustomError extends Error {
-  statusCode?: number;
-}
-
-interface errorDetails {
-  error: boolean;
-  message: string;
-  stack?: string;
-}
+import { CustomError, errorDetails } from "../types/errorTypes";
 
 function errorHandle(error: CustomError, req: Request, res: Response, next: NextFunction) {
-  console.log("olá error");
   // verify if error have a statusCode defined if not, assign 500
   const statusCode: number = error.statusCode || 500;
 
